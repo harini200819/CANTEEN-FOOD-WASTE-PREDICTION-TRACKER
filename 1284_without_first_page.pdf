@@ -1,0 +1,456 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 3
+/Kids [ 4 0 R 13 0 R 16 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Page
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/hebo 11 0 R
+/helv 12 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 5095
+>>
+stream
+q
+q
+0.9 0.0 0.0 0.9 0.0 28 cm
+1 0 0 1 0 0 cm
+BT
+/F1 12 Tf
+14.4 TL
+ET
+q
+BT
+/F1 8 Tf
+9.6 TL
+ET
+0.392157 0.454902 0.545098 rg
+BT
+1 0 0 1 221.2258 28.34646 Tm
+(IT23302 \226 Data Structures Project \174 Page 2) Tj
+T*
+ET
+Q
+q
+1 0 0 1 57.02362 763.8661 cm
+q
+0.090196 0.145098 0.329412 rg
+BT
+1 0 0 1 0 5 Tm
+/F2 16 Tf
+21 TL
+(C PROGRAM SOURCE CODE) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 57.02362 65.46614 cm
+0.066667 0.094118 0.152941 rg
+BT
+1 0 0 1 0 679.4 Tm
+/F3 7 Tf
+8.8 TL
+(\043include \074stdio\056h\076) Tj
+T*
+(\043include \074string\056h\076) Tj
+T*
+(\043include \074stdlib\056h\076) Tj
+T*
+T*
+(\043define MAX 100) Tj
+T*
+T*
+(struct FoodRecord \173) Tj
+T*
+(    char itemName\13350\135\073) Tj
+T*
+(    char date\13315\135\073) Tj
+T*
+(    int prepared\073) Tj
+T*
+(    int consumed\073) Tj
+T*
+(    int wasted\073) Tj
+T*
+(    float wastePercentage\073) Tj
+T*
+(\175\073) Tj
+T*
+T*
+(struct FoodRecord records\133MAX\135\073) Tj
+T*
+(int count \075 0\073) Tj
+T*
+T*
+(void calculateWaste\050int i\051 \173) Tj
+T*
+(    records\133i\135\056wasted \075 records\133i\135\056prepared \055 records\133i\135\056consumed\073) Tj
+T*
+(    if \050records\133i\135\056prepared \076 0\051 \173) Tj
+T*
+(        records\133i\135\056wastePercentage \075 \050\050float\051records\133i\135\056wasted \057 records\133i\135\056prepared\051 \052 100\073) Tj
+T*
+(    \175 else \173) Tj
+T*
+(        records\133i\135\056wastePercentage \075 0\073) Tj
+T*
+(    \175) Tj
+T*
+(\175) Tj
+T*
+T*
+(void addRecord\050\051 \173) Tj
+T*
+(    if \050count \076\075 MAX\051 \173) Tj
+T*
+(        printf\050\042Storage is full\041\134\134n\042\051\073) Tj
+T*
+(        return\073) Tj
+T*
+(    \175) Tj
+T*
+(    printf\050\042Enter Item Name\072 \042\051\073) Tj
+T*
+(    scanf\050\042\045s\042\054 records\133count\135\056itemName\051\073) Tj
+T*
+(    printf\050\042Enter Date \050DD\055MM\055YYYY\051\072 \042\051\073) Tj
+T*
+(    scanf\050\042\045s\042\054 records\133count\135\056date\051\073) Tj
+T*
+(    printf\050\042Enter Quantity Prepared\072 \042\051\073) Tj
+T*
+(    scanf\050\042\045d\042\054 \046records\133count\135\056prepared\051\073) Tj
+T*
+(    printf\050\042Enter Quantity Consumed\072 \042\051\073) Tj
+T*
+(    scanf\050\042\045d\042\054 \046records\133count\135\056consumed\051\073) Tj
+T*
+T*
+(    calculateWaste\050count\051\073) Tj
+T*
+(    count\053\053\073) Tj
+T*
+(    printf\050\042Record added successfully\041\134\134n\042\051\073) Tj
+T*
+(\175) Tj
+T*
+T*
+(void showReport\050\051 \173) Tj
+T*
+(    if \050count \075\075 0\051 \173) Tj
+T*
+(        printf\050\042No records found\056\134\134n\042\051\073) Tj
+T*
+(        return\073) Tj
+T*
+(    \175) Tj
+T*
+(    printf\050\042\134\134n\055\055\055 Canteen Food Waste Report \055\055\055\134\134n\042\051\073) Tj
+T*
+(    printf\050\042\045\05515s \045\05512s \045\05510s \045\05510s \045\05510s \045\05510s\134\134n\042\054 \042Item\042\054 \042Date\042\054 \042Prepared\042\054 \042Consumed\042\054 ) Tj
+T*
+(\042Wasted\042\054 \042Waste \045\042\051\073) Tj
+T*
+(    for \050int i \075 0\073 i \074 count\073 i\053\053\051 \173) Tj
+T*
+(        printf\050\042\045\05515s \045\05512s \045\05510d \045\05510d \045\05510d \045\0559\0562f\045\045\134\134n\042\054) Tj
+T*
+(            records\133i\135\056itemName\054 records\133i\135\056date\054 records\133i\135\056prepared\054) Tj
+T*
+(            records\133i\135\056consumed\054 records\133i\135\056wasted\054 records\133i\135\056wastePercentage\051\073) Tj
+T*
+(    \175) Tj
+T*
+(\175) Tj
+T*
+T*
+(void predictQuantity\050char\052 name\051 \173) Tj
+T*
+(    int totalPrepared \075 0\054 totalConsumed \075 0\054 matches \075 0\073) Tj
+T*
+(    for \050int i \075 0\073 i \074 count\073 i\053\053\051 \173) Tj
+T*
+(        if \050strcmp\050records\133i\135\056itemName\054 name\051 \075\075 0\051 \173) Tj
+T*
+(            totalPrepared \053\075 records\133i\135\056prepared\073) Tj
+T*
+(            totalConsumed \053\075 records\133i\135\056consumed\073) Tj
+T*
+(            matches\053\053\073) Tj
+T*
+(        \175) Tj
+T*
+(    \175) Tj
+T*
+(    if \050matches \076 0\051 \173) Tj
+T*
+(        int avgConsumed \075 totalConsumed \057 matches\073) Tj
+T*
+(        printf\050\042\134\134nPrediction for \045s\072 Suggested quantity to prepare tomorrow is approximately \045d ) Tj
+T*
+(units based on past consumption\056\134\134n\042\054 name\054 avgConsumed \053 5\051\073) Tj
+T*
+(    \175 else \173) Tj
+T*
+(        printf\050\042Item not found for prediction\056\134\134n\042\051\073) Tj
+T*
+(    \175) Tj
+T*
+(\175) Tj
+T*
+ET
+Q
+Q
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+/F2-0 14 Tf
+16.8 TL
+ET
+BT
+1 0 0 1 126.1378 807.8898 Tm
+(CANTEEN FOOD WASTE PREDICTION \046 TRACKER) Tj
+T*
+ET
+BT
+/F1-0 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 224.8593 791.8898 Tm
+(Using Arrays\054 Sorting and Searching) Tj
+T*
+ET
+BT
+1 0 0 1 230.6103 778.8898 Tm
+(IT23302 \055 Data Structures Project) Tj
+T*
+ET
+BT
+/F2-0 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 168.4877 760.8898 Tm
+(NAVEENA) Tj
+T*
+ET
+BT
+1 0 0 1 390.5404 760.8898 Tm
+(HARNI) Tj
+T*
+ET
+BT
+/F1-0 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 168.2482 748.8898 Tm
+(2025115047) Tj
+T*
+ET
+BT
+1 0 0 1 382.5474 748.8898 Tm
+(2025115103) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+/Name /F3
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+>>
+endobj
+13 0 obj
+<<
+/Type /Page
+/Contents 14 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 15 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Parent 2 0 R
+>>
+endobj
+14 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 1391
+>>
+stream
+GatU3D0+Dj&H88.Z"57";AoeT#3b_IY(=.-F]+ZQVB8Fm7^WDe",fdGK^%<B^QiU;IKS;&15RUMY'0PbZs&sG`ZJ.Z%2JrYqf"\P_6h!"KBX3_p`H0tT7&do=#t)iCO#*V@<X<P]`H#jSSm0`_faaX[f_#P'[5(<AXS9a\K.n8L@'3qC+l6*mp!5[3[;i=i/U>0:Qhm_\`-T(OL#f6,l@a318/)_Jj0A;[G(3cHBVKTDiD,9HPUk7@<nI/?kd8:6Vb[\08PiL*"l#lN4+KDh/%9Ue*MTn\e[IEghak;L9-rX*nYG,6L>U1'l*>%Ma@u>n6l)`"3/5UF*%^Q1:N^&,FB)RP4/dC?ekAHgYCeO8$O%pRZ2bI.>N7A([s[*'I6?=p7O.ObU\O#`(K2t1u>$oM]ugL`bZBFn.+1J--QCKRS"^NMtla"#Z+R]A#iW#?^i"0MNBr&/4WF;,8FR[B-T`mQ+K+:i#UOQ[#k`?TR?(iG^FB^&5\%KVN2#4P&Q<Ek97Qg-:0%4,91^`9r2P].QuOU$uq?``%p-t2n@N:'f2;</?<B.q;9t$r_7%pPub'3c8IHbO!&$`J?P-/Msfr5DkHZ+_FV[X@RjB/;X!]T"3/3"1X+D?<0G$3L0dN;S_bpFS*fH/M=.H7GFPH<Mckc<g=X\:$d9V\n,ohsiJreG`aKQW!/9n^Yq]pK>,J6SdD=X6eR7j0CA,<DT\VRn8^!f:3Q9OM3Q@fq:P?_+1\>eldqCM567.hI=9S^?@_A/U2\d=4@L`-.I5ZoD[":,eq[\+"4iTo!B$?Pt7N\iE8P8$Xn6?Pm^.9eFNHL)X.J8t^K?We*NpKW?'p*_l7430bheS6<P&%]Mik"/iR*>l'SGB!$_76^)WS]E,*?Qb#^Ku_VR1!+J<f>+X<Lt+,Norag<EWZmFKE<K$(?NNPha-Nmpa7u:gHg7StG2uS<7d+g#E%;N#uY7'd]"m<4WRk;mdRaT&-J3$[7nXD8$AFF<Q55U+ff4HVnegHuUH"^N+dq!pX[s.`nhN>-2/j802;a`YKhW/$LTl?Z&tt.>n725YZAshc>t[<*"&L<!bn_E.-+>?<pjQqqD@jhg^0ma,bH6q=_r!KE$2nrm1Qgi,X7>fig-?\.(er>JB.gQ2sc[[RPrs<pLD5CfEYk<Rl6dK>IMK<qenu"nl(H(idoYDBVqKQ*kI]H%NbGW(nn&YZH(B0+p@R%=D@<@>s:0"Eb6aa(bVkd!pmI#s)dO2f-H3-<.@dC2DY^&1bRc,.].gQX*)o'/405@PrR(5Qh7s#:'_%NVm#Uasm.uqV'L=<Y#<7S)SaWMVTekB?,.b?Ki]p\<>UIm7n!;=#C@pp!o`gb%60M`8[6`QZ,cn+kn6QVkLlJi9WZm_=-O~>
+endstream
+endobj
+15 0 obj
+<<
+/F1 6 0 R
+/F2 8 0 R
+/F3 10 0 R
+/hebo 11 0 R
+/helv 12 0 R
+>>
+endobj
+16 0 obj
+<<
+/Type /Page
+/Contents 17 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 15 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Parent 2 0 R
+>>
+endobj
+17 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 425
+>>
+stream
+Gas1Zd8%P4'Rek?*(`i$&#J[)dc$Zm&e\[sp2Ma..l`2*V'D/E^Y9W^!Q!NdC%&UqhK*]TBK5AA/f)797X)Y`3:m>I&-;`_7ie_+4ec+&,BBD(8]Foe!thNR-jN=48i$W0D$b%9ST@7[:DLA`M3&pc(Pmj8-V<7WS4bs]Dt)al;u"Ac2+DIDZ\?F97V6BYDP1Xh\*_CZ:ikijp'Bc:jH,cT8kKk(7+WYr-VLp&hV3']S;@N:+bECV$-!Yb96kcQaJ;Y6<Rr09kd<Sh;6A.]-h6/3=VZD@R+bVjS&_SL]'Zh,f_jn"T_&c\eQMKm*\P[j6M<'1f4JOcE_t"t*re19ITAXnl(sQk:/!J<rEu:ur?RFc_g5hT<Jf^P=V^W;g218qVQ*3/U@+Q;ZocDMs-sPaX$M5<];*Uoq?@9SPSF~>
+endstream
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000127 00000 n 
+0000000176 00000 n 
+0000000468 00000 n 
+0000005615 00000 n 
+0000005722 00000 n 
+0000005829 00000 n 
+0000005941 00000 n 
+0000006053 00000 n 
+0000006159 00000 n 
+0000006262 00000 n 
+0000006360 00000 n 
+0000006562 00000 n 
+0000008046 00000 n 
+0000008125 00000 n 
+0000008327 00000 n 
+trailer
+<<
+/Size 18
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+8844
+%%EOF
